@@ -1,6 +1,6 @@
 import sys
 import logging
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG, format='%(message)s')
 
 def dodawanie(a, b):
     return a + b
@@ -23,31 +23,39 @@ if __name__ == "__main__":
             x = float(input())
             print('Podaj 2 liczbę:')
             y = float(input())
+            logging.error ("///Liczby na których będzie wykonywane zadanie na ten moment to: %s, %s" % (x, y))
             print(dodawanie(x,y))
             break    
+        
         elif n == 2:
             print('Podaj 1 liczbę:')
             x = float(input())
             print('Podaj 2 liczbę:')
             y = float(input())
+            logging.error ("///Liczby na których będzie wykonywane zadanie na ten moment to: %s, %s" % (x, y))
             print(odejmowanie(x,y))
             break 
+        
         elif n == 3:
             print('Podaj 1 liczbę:')
             x = float(input())
             print('Podaj 2 liczbę:')
             y = float(input())
+            logging.error ("///Liczby na których będzie wykonywane zadanie na ten moment to: %s, %s" % (x, y))
             print(mnozenie(x,y))
             break 
+        
         elif n == 4:
             print('Podaj 1 liczbę:')
             x = float(input())
             print('Podaj 2 liczbę:')
             y = float(input())
+            logging.error ("///Liczby na których będzie wykonywane zadanie na ten moment to: %s, %s" % (x, y))
             if y == 0:
                 print('Dziekujemy za korzystanie z kalkulatora. Nie zapraszamy ponownie.')
             print(dzielenie(x,y))
             break 
+        
         else:
             print('Proszę podać liczbę z zakresu 1-4.')
             break
