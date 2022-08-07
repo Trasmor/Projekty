@@ -17,33 +17,33 @@ def dzielenie(a, b):
 if __name__ == "__main__":    
     print('Wybierz działanie: 1-Dodawanie, 2-Odejmowanie, 3-Mnożenie, 4-Dzielenie')
     while True:
-        n = int(input())
+        n = float(input())
         if n == 1:
             print('Podaj 1 liczbę:')
-            x = int(input())
+            x = float(input())
             print('Podaj 2 liczbę:')
-            y = int(input())
+            y = float(input())
             print(dodawanie(x,y))
             break    
         elif n == 2:
             print('Podaj 1 liczbę:')
-            x = int(input())
+            x = float(input())
             print('Podaj 2 liczbę:')
-            y = int(input())
+            y = float(input())
             print(odejmowanie(x,y))
             break 
         elif n == 3:
             print('Podaj 1 liczbę:')
-            x = int(input())
+            x = float(input())
             print('Podaj 2 liczbę:')
-            y = int(input())
+            y = float(input())
             print(mnozenie(x,y))
             break 
         elif n == 4:
             print('Podaj 1 liczbę:')
-            x = int(input())
+            x = float(input())
             print('Podaj 2 liczbę:')
-            y = int(input())
+            y = float(input())
             if y == 0:
                 print('Dziekujemy za korzystanie z kalkulatora. Nie zapraszamy ponownie.')
             print(dzielenie(x,y))
